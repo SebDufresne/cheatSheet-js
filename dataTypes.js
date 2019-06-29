@@ -1,86 +1,88 @@
+const output = console.log;
+
 const repeat = (str, times) => str.repeat(times);
 
 const createBox = string => {
   const margin = repeat('-', string.length + 6);
-  console.log(`\n${margin}\n-- ${string} --\n${margin}\n`);
+  output(`\n${margin}\n-- ${string} --\n${margin}\n`);
 };
 
 createBox('Number');
 
 const a = 1;
-console.log('a = 1');
-console.log(`a instance of Number? ${a instanceof Number}`);
-console.log(`typeof a? ${typeof a}`);
-console.log(`length of a is: ${a.length}`);
+output('a = 1');
+output(`a instance of Number? ${a instanceof Number}`);
+output(`typeof a? ${typeof a}`);
+output(`length of a is: ${a.length}`);
 
 createBox('String');
 
 const b = 'b';
-console.log("b = 'b'");
-console.log(`b instance of String? ${b instanceof String}`);
-console.log(`typeof b? ${typeof b}`);
-console.log(`length of b is: ${b.length}`);
+output("b = 'b'");
+output(`b instance of String? ${b instanceof String}`);
+output(`typeof b? ${typeof b}`);
+output(`length of b is: ${b.length}`);
 
 createBox('Array');
 
 const c = [1,2];
-console.log('c = [1,2]');
-console.log(`c instance of Array? ${c instanceof Array}`);
-console.log(`c instance of Object? ${c instanceof Object}`);
-console.log(`typeof c? ${typeof c}`);
-console.log(`length of c is: ${c.length}`);
-console.log(`Object.keys(c) are: ${Object.keys(c)}`);
+output('c = [1,2]');
+output(`c instance of Array? ${c instanceof Array}`);
+output(`c instance of Object? ${c instanceof Object}`);
+output(`typeof c? ${typeof c}`);
+output(`length of c is: ${c.length}`);
+output(`Object.keys(c) are: ${Object.keys(c)}`);
 
 createBox('Object');
 
 const d = { a: 1, b:2 };
-console.log('d = { a: 1, b:2 }')
-console.log(`d instance of Array? ${d instanceof Array}`);
-console.log(`d instance of Object? ${d instanceof Object}`);
-console.log(`typeof d? ${typeof d}`);
-console.log(`length of d is: ${d.length}`);
-console.log(`Object.keys(d) are: ${Object.keys(d)}`);
+output('d = { a: 1, b:2 }')
+output(`d instance of Array? ${d instanceof Array}`);
+output(`d instance of Object? ${d instanceof Object}`);
+output(`typeof d? ${typeof d}`);
+output(`length of d is: ${d.length}`);
+output(`Object.keys(d) are: ${Object.keys(d)}`);
 
 createBox('NaN');
 
 const e = NaN;
-console.log('e = NaN');
-console.log(`typeof e? ${typeof e}`);
-console.log(`length of e is: ${e.length}`);
-console.log(`isNaN(e) is: ${isNaN(e)}`);
-console.log(`Does e == NaN ? ${e == NaN}`);
-console.log(`Does e === NaN ? ${e === NaN}`);
+output('e = NaN');
+output(`typeof e? ${typeof e}`);
+output(`length of e is: ${e.length}`);
+output(`isNaN(e) is: ${isNaN(e)}`);
+output(`Does e == NaN ? ${e == NaN}`);
+output(`Does e === NaN ? ${e === NaN}`);
 
 createBox('Null');
 
 const f = null;
-console.log('f = null');
-console.log(`typeof f? ${typeof f}`);
-console.log(`length of f gives an ERROR`);
-console.log(`Does f === null ? ${f === null}`);
+output('f = null');
+output(`typeof f? ${typeof f}`);
+output(`length of f gives an ERROR`);
+output(`Does f === null ? ${f === null}`);
 
 createBox('Undefined');
 
 const g = undefined;
-console.log('g = undefined');
-console.log(`typeof g? ${typeof g}`);
-console.log(`length of g gives an ERROR`);
-console.log(`Does g === undefined ? ${g === undefined}`);
+output('g = undefined');
+output(`typeof g? ${typeof g}`);
+output(`length of g gives an ERROR`);
+output(`Does g === undefined ? ${g === undefined}`);
 
 createBox('Function');
 
 const h = x => ++x;
 const i = x => ++x;
-console.log('h = x => ++x, i = x => ++x;');
-console.log(`typeof h? ${typeof h}`);
-console.log(`h instance of Object? ${d instanceof Object}`);
-console.log(`length of h is: ${h.length}`);
-console.log(`Does h === i ? ${h === i}`);
-console.log(`Does JSON.stringify(h) === JSON.stringify(i) ? ${JSON.stringify(h) === JSON.stringify(i)}`);
+output('h = x => ++x, i = x => ++x;');
+output(`typeof h? ${typeof h}`);
+output(`h instance of Object? ${d instanceof Object}`);
+output(`length of h is: ${h.length}`);
+output(`Does h === i ? ${h === i}`);
+output(`Does JSON.stringify(h) === JSON.stringify(i) ? ${JSON.stringify(h) === JSON.stringify(i)}`);
 
 createBox('Boolean');
 
 const j = true;
-console.log('j = true;');
-console.log(`typeof j? ${typeof j}`);
-console.log(`length of j is: ${j.length}`);
+output('j = true;');
+output(`typeof j? ${typeof j}`);
+output(`length of j is: ${j.length}`);
