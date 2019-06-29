@@ -78,3 +78,9 @@ console.log(`length of h is: ${h.length}`);
 console.log(`Does h === i ? ${h === i}`);
 console.log(`Does JSON.stringify(h) === JSON.stringify(i) ? ${JSON.stringify(h) === JSON.stringify(i)}`);
 
+createBox('Boolean');
+
+const j = true;
+console.log('j = true;');
+console.log(`typeof j? ${typeof j}`);
+console.log(`length of j is: ${j.length}`);
